@@ -39,14 +39,16 @@ Ljudje smo misleča bitja in vsem se na dan porodi tisoč in ena misel. Večino 
 Ciljna publika ni omejena, vendar se aplikacija izgledno bolj posveča ljudem starim med 18 in 30 let.
 
 #### Podprte naprave:
+
 Osebni računalnik | Laptop | Tablica | Pametni telefon
 ----------------- | ------ | ------- | ---------------
- Da | Da | ? | ?
+ Da | Da | (?) | (?)
  
 #### Podprti brskalniki:
+
 Chrome | Firefox | Opera | Safari | Edge | IE
 ------ | ------- | ----- | ------ | ---- | --
-Da (ver. 49+) | Da (ver. 30+) | ? | ? | ? | Ne (zastarelo)
+Da (ver. 49+) | Da (ver. 30+) | (?) | (?) | (?) | Ne (zastarelo)
 
 ## Tehnologija:
 
