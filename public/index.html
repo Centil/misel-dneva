@@ -1,147 +1,189 @@
 <!DOCTYPE html>
-<hmtl>
+<html>
     <head>
         <title>Daily Thoughts</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- stylesheets -->
         <link rel="stylesheet" href="theme/css/thoughts.css">
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html">Logo_icon</a>
+            <nav class="flex row">
+                <a class="logo icon" href="index.html"><img src="theme/img/logo_icon.svg" alt="logo icon"></a>
                 <input type="text" name="search" placeholder="Search thought">
-                <a href="signin.html">Sign_in_icon</a>
+                <a class="button signin" href="signin.html">Sign in</a>
             </nav>
         </header>
-        <div class="main">
-            <!-- banner logo -->
-            <div class="banner">
-                <div class="centered">
-                    <img src="theme/img/" alt="logo">
-                    <p>Motivate people</p>
-                    <p>Share your thoughts</p>
+        <!-- header space -->
+        <div class="spacing header"></div>
+        <!-- banner logo -->
+        <div class="banner">
+            <div class="logo box">
+                <img class="logo" src="theme/img/logo.svg" alt="logo">
+                <div class="distance">
+                    <p class="distance top">
+                        <span>Motivate people</span>
+                    </p>
+                    <p>
+                        <span>Share your thoughts</span>
+                    </p>
                 </div>
             </div>
+        </div>
+        <div class="main">
             <!-- popular daily thoughts -->
             <section>
                 <header>
                     <div>
-                        Popular daily thoughts
+                       <h2>Popular daily thoughts</h2>
                     </div>
                 </header>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 1">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 2">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 3">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 4">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 5">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 6">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 7">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 8">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 9">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 10">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 11">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 12">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 13">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 14">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 15">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 16">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 17">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 18">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 19">
-                    </a>
-                </div>
-                <div class="responsive img">
-                    <a href="#">
-                        <img src="/" alt="popular daily thought 20">
-                    </a>
+                <div class="flex column">
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 1">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 2">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 3">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 4">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 5">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 6">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 7">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 8">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 9">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 10">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 11">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 12">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 13">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 14">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 15">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 16">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 17">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 18">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 19">
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="#">
+                            <img src="/public/theme/img/empty_pic.svg" alt="popular daily thought 20">
+                        </a>
+                    </div>
                 </div>
             </section>
             <!-- trending daily thoughts -->
             <section>
                 <header>
                     <div>
-                        Trending daily thoughts
+                        <h2>Trending daily thoughts</h2>
                     </div>
                 </header>
-                <div class ="responsie video">
-                    <div class = "">
+                <div class ="responsive vid">
+                    <div class = "video side">
+                        <div class="">
+                            <video controls>
+                                <source src="uploads/" type="video/webm">
+                                <source src="uploads/" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="">
+                            <span class="video main tag">#Main tag of the video</span>
+                            <hr>
+                            <span class="video views">
+                                121,3k
+                            </span>
+                        </div>
                     </div>
-                    <div class="">
+                    <div class="info side">
+                        <div class="video info">
+                            <h3>Name of the video title</h3>
+                            <p>By <span class="username">User_name</span></p>
+                        </div>
+                        <div class="video vote">
+                            <input type="radio" name="vote" id="voteS" value="Smart">
+                            <label for="voteS">Smart</label>
+                            <input type="radio" name="vote" id="voteD" value="Dull">
+                            <label for="voteD">Dull</label>
+                        </div>
+                        <div class="video comments">
+                            <a href="#">Read comments</a>
+                        </div>
+                        <div class="social media">
+                            <input type="button" value="Facebook">
+                            <input type="button" value="Twitter">
+                            <input type="button" value="Reddit">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -151,7 +193,7 @@
                 <a href="#">Contact</a>
                 <a href="#">Rules</a>
                 <hr class="vertical">
-                <span>2016 Daily Thoughts</span>
+                <span>&copy;2016 Daily Thoughts</span>
             </div>
         </footer>
         <!-- scripts -->
