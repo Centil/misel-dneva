@@ -2,50 +2,102 @@ body {
     margin: 0px;
 }
 
-/*---------- BUTTONS ----------*/
-
-.button.signin {
-    background-color: darkgrey;
+.thought.header {
+    height: 66px;
     color: white;
+    background-color: hsla(270, 50%, 40%, 1);
+    text-align: center;
+    vertical-align: middle;
 }
 
+.thought.header h2 {
+    margin: 0px;
+    line-height: 66px;
+}
+
+/***********************************/
 /*---------- FLEX LAYOUT ----------*/
+/***********************************/
+
 .flex {
     display: flex;
 }
 .flex.row {
     flex-flow: row;
 }
+.flex.row.wrap {
+    flex-flow: row wrap;
+}
+.flex.row.center {
+    justify-content: center;
+}
 .flex.column {
     flex-flow: column;
 }
+.flex.column.wrap {
+    flex-flow: column wrap;
+}
 
+/*******************************************/
 /*---------- RESPONSIVE ELEMETNS ----------*/
+/*******************************************/
+
+/* ##### NAVIGATION ##### */
 nav {
     position: fixed;
     width: 100%;
-    height: 65px;
-    background-color: darkorchid;
+    height: 66px;
+    background-color: hsla(280, 61%, 50%, 1);
 }
 
-.spacing.header {
-    height: 65px;
+.spacing.nav.header {
+    height: 66px;
 }
 
+footer {
+    height: 66px;
+    color: white;
+    background-color: hsla(270, 50%, 40%, 1);
+    text-align: center;
+    vertical-align: middle; 
+}
+
+/**************************************************/
 /*---------- RESPONSIVE SCREEN ELEMENTS ----------*/
+/**************************************************/
 
-/* ##### NAVIGATION ##### */
+/* +++++++++++++++++++++++ */
+/* +++++ MOBILE SIZE +++++ */
+/* ##### SEARCH BAR ##### */
+.search.bar{
+    margin: 10px 0px 10px auto;
+    width: 45%;
+    font: "Lucida Console", Monaco, monospace;
+    font-size: 1em;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+}
+.search.bar:active, .search.bar:hover {
+    /*border-color: darkslateblue;*/
+    border-color: hsla(270, 50%, 40%, 0.85);
+}
+.search.bar:focus, .search.bar::selection {
+    border-color: hsla(270, 50%, 40%, 1);
+}
+
 
 /* ##### BANNER ##### */
 .banner {
-    color:beige;
+    color: cornsilk;
     background:darkslateblue url("../img/banners/logo-banner-small.jpeg") no-repeat center;
     background-size: auto;
     text-align: center;
     vertical-align: middle;
 }
 .banner .logo.box {
-    padding-top: 15%;
+    padding-top: 13%;
     padding-bottom: 10%
 }
 .banner .logo.box img.logo {
@@ -63,15 +115,35 @@ nav {
     border-radius: 5px;
 }
 
-/* ##### POPULAR THOUGHTS ##### */
+/* ##### HEADERS ##### */
 
-div.responsive.img a img {
+
+/* ##### IMAGES ##### */
+.responsive.img a img {
     width: 75px;
     background-color: red;
 }
 
+/* ##### VIDEO ##### */
+.responsive.video video {
+    width: 100%;
+    height: auto;
+}
 
+/* +++++++++++++++++++++++ */
+/* +++++ TABLET SIZE +++++ */
 @media only screen and (min-width: 414px) {
+    
+    /* ##### SEARCH BAR ##### */
+    .search.bar{
+        margin-left: auto;
+        width: 60%;
+        background-image: url(../img/icons/search_icon.svg);
+        background-position: right;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
     /* ##### BANNER ##### */
     .banner {
         background-image: url("../img/banners/logo-banner-normal.jpeg");
@@ -92,13 +164,22 @@ div.responsive.img a img {
         font-size: 1.5em;
     }
     
+    /* ##### IMAGES ##### */
     div.responsive.img a img {
         width: 150px;
         background-color: blue;
     }
 }
-    
+
+/* ++++++++++++++++++++++++++++ */
+/* +++++ PC/NOTEBOOK SIZE +++++ */
 @media only screen and (min-width: 1024px) {
+    
+    /* ##### SEARCH BAR ##### */
+    .search.bar{
+        width: 70%;
+    }
+    
     /* ##### BANNER ##### */
     .banner {
         background-image: url("../img/banners/logo-banner-big.jpeg");
@@ -111,8 +192,61 @@ div.responsive.img a img {
         font-size: 2em;
     }
     
+    /* ##### IMAGES ##### */
     div.responsive.img a img {
         width: 225px;
         background-color: green;
     }
+}
+
+/************************************************/
+/*---------- BUTTONS & INPUTS & ICONS ----------*/
+/************************************************/
+
+/* ##### SIGN IN ##### */
+.button.signin {
+    color: white;
+    background-color: hsla(280, 61%, 50%, 1);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    margin: 10px 6px 10px auto;
+    border-radius: 5px;
+    padding: 14px 19px;
+}
+
+.button.signin:hover, .logo.icon:hover {
+    background-color: hsla(240, 57%, 90%, 0.2);
+}
+
+.button.signin:active, .logo.icon:active {
+    background-color: hsla(270, 50%, 40%, 0.65);
+}
+
+/* ##### LOGO ICON ##### */
+.logo.icon {
+    margin: 2px 0px 2px 0px;
+    border-radius: 5px;
+}
+
+/******************************/
+/*---------- EFFECTS ---------*/
+/******************************/
+
+.header.shadow {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 2px 10px 0 rgba(0,0,0,0.2);
+}
+.button.shadow {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 2px 6px 0 rgba(0,0,0,0.2);
+}
+.icon.shadow{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 2px 10px 0 rgba(0,0,0,0.2);
+}
+
+/***************************/
+/*---------- TEXT ---------*/
+/***************************/
+
+.text.centered {
+    text-align: center;
 }
