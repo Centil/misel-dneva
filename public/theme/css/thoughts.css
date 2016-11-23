@@ -2,19 +2,6 @@ body {
     margin: 0px;
 }
 
-.thought.header {
-    height: 66px;
-    color: white;
-    background-color: hsla(270, 50%, 40%, 1);
-    text-align: center;
-    vertical-align: middle;
-}
-
-.thought.header h2 {
-    margin: 0px;
-    line-height: 66px;
-}
-
 /***********************************/
 /*---------- FLEX LAYOUT ----------*/
 /***********************************/
@@ -30,6 +17,9 @@ body {
 }
 .flex.row.center {
     justify-content: center;
+}
+.flex.row.space-between {
+    justify-content: space-between;
 }
 .flex.column {
     flex-flow: column;
@@ -47,17 +37,24 @@ nav {
     position: fixed;
     width: 100%;
     height: 66px;
-    background-color: hsla(280, 61%, 50%, 1);
+    background-color: hsla(280, 61%, 50%, 1.0);
+    z-index: 100;
 }
-
 .spacing.nav.header {
     height: 66px;
 }
 
+/* ##### CONTENT ##### */
+.content {
+    background-color: hsla(248, 39%, 39%, 1.0);
+    background: linear-gradient(hsla(248, 39%, 39%, 1.0), hsla(270, 50%, 40%, 0.65), hsla(270, 50%, 40%, 0));
+}
+
+/* ##### FOOTER ##### */
 footer {
     height: 66px;
     color: white;
-    background-color: hsla(270, 50%, 40%, 1);
+    background-color: hsla(270, 50%, 40%, 1.0);
     text-align: center;
     vertical-align: middle; 
 }
@@ -84,14 +81,13 @@ footer {
     border-color: hsla(270, 50%, 40%, 0.85);
 }
 .search.bar:focus, .search.bar::selection {
-    border-color: hsla(270, 50%, 40%, 1);
+    border-color: hsla(270, 50%, 40%, 1.0);
 }
-
 
 /* ##### BANNER ##### */
 .banner {
-    color: cornsilk;
-    background:darkslateblue url("../img/banners/logo-banner-small.jpeg") no-repeat center;
+    color: hsla(48, 100%, 93%, 1.0);
+    background: hsla(248, 39%, 39%, 1.0) url("../img/banners/logo-banner-small.jpeg") no-repeat center;
     background-size: auto;
     text-align: center;
     vertical-align: middle;
@@ -110,24 +106,88 @@ footer {
 .banner .logo.box span {
     font-family: "Times New Roman", Times, serif;
     font-size: 1em;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: hsla(0, 0%, 0%, 0.3);
     padding: 2px 8% 2px 8%;
     border-radius: 5px;
 }
 
 /* ##### HEADERS ##### */
+.thought.header {
+    height: 50px;
+    color: white;
+    background-color: hsla(270, 50%, 40%, 1.0);
+    text-align: center;
+    vertical-align: middle;
+}
+.thought.header h2 {
+    margin: 0px;
+    line-height: 50px;
+    font-size: 1.25em;
+    font-style: italic;
+}
 
 
 /* ##### IMAGES ##### */
+.responsive.img {
+    position: relative;
+}
 .responsive.img a img {
     width: 75px;
-    background-color: red;
+    margin: 2px;
+    border-radius: 4px;
+}
+.responsive.img a:hover:after {
+    content:'';
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 72px;
+    height: 72px;
+    border: 3px solid hsla(0, 0%, 0%, 0.65);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.responsive.img a .rimg-tag {
+    width: 80%;
+    margin-left: 10%;
+    padding: 1px 0px 1px 0px;
+    border-radius: 5px;
+    color: hsla(0, 0%, 100%, 1.0);
+    background-color: hsla(0, 0%, 0%, 0.65);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+    left: 0px;
+    top: 65%;
 }
 
 /* ##### VIDEO ##### */
-.responsive.video video {
+.video.thought.container {
+    width: 100%;
+}
+.video.thought.container .video.side .responsive.video {
+    
+}
+.video.thought.container .video.side .responsive.video video {
     width: 100%;
     height: auto;
+}
+.video.thought.container .video.side .views.info {
+    padding: 6px;
+    border: 2px solid black;
+}
+.video.thought.container .video.side .views.info .vertical.line {
+    margin-left: auto;
+}
+.video.thought.container .video.side .views.info .video.views {
+    margin-left: auto;
+}
+.video.thought.container .info.side {
+    
+}
+.video.thought.container .info.side .social.media {
+    
 }
 
 /* +++++++++++++++++++++++ */
@@ -146,7 +206,7 @@ footer {
     
     /* ##### BANNER ##### */
     .banner {
-        background-image: url("../img/banners/logo-banner-normal.jpeg");
+        background-image: url(../img/banners/logo-banner-normal.jpeg);
         min-height: 400px;
     }
     .banner .logo.box {
@@ -164,10 +224,34 @@ footer {
         font-size: 1.5em;
     }
     
+    /* ##### HEADERS ##### */
+    .thought.header {
+        height: 66px;
+    }
+    .thought.header h2 {
+        line-height: 66px;
+        font-size: 1.75em;
+    }
+    
     /* ##### IMAGES ##### */
     div.responsive.img a img {
-        width: 150px;
-        background-color: blue;
+        width: 180px;
+        margin: 4px;
+    }
+    .responsive.img a:hover:after {
+        width: 178px;
+        height: 178px;
+        border-width: 5px;
+    }
+    .responsive.img a .rimg-tag {
+        padding: 4px 0px 4px 0px;
+        font-size: 1.4em;
+        top: 75%;
+    }
+    
+    /* ##### VIDEO ##### */
+    .video.side {
+        min-width: 400px;
     }
 }
 
@@ -192,10 +276,26 @@ footer {
         font-size: 2em;
     }
     
+    /* ##### HEADERS ##### */
+    .thought.header h2 {
+        font-size: 2.25em;
+    }
+    
     /* ##### IMAGES ##### */
     div.responsive.img a img {
-        width: 225px;
-        background-color: green;
+        width: 300px;
+        margin: 6px;
+    }
+    .responsive.img a:hover:after {
+        width: 300px;
+        height: 300px;
+        border-width: 6px;
+        border-radius: 10px;
+    }
+    .responsive.img a .rimg-tag {
+        padding: 6px 0px 6px 0px;
+        font-size: 1.8em;
+        top: 78%;
     }
 }
 
@@ -206,7 +306,7 @@ footer {
 /* ##### SIGN IN ##### */
 .button.signin {
     color: white;
-    background-color: hsla(280, 61%, 50%, 1);
+    background-color: hsla(280, 61%, 50%, 1.0);
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
@@ -214,13 +314,68 @@ footer {
     border-radius: 5px;
     padding: 14px 19px;
 }
-
 .button.signin:hover, .logo.icon:hover {
     background-color: hsla(240, 57%, 90%, 0.2);
 }
-
 .button.signin:active, .logo.icon:active {
     background-color: hsla(270, 50%, 40%, 0.65);
+}
+
+/* ##### INPUT BUTTONS ##### */
+input[type="button"] {
+    width: 100px;
+    color: white;
+    background: hsla(260, 50%, 40%, 1.0);
+    border: 1px solid;
+    margin: 10px 6px 10px auto;
+    border-radius: 5px;
+    padding: 14px 19px; 
+    font-weight: bolder;
+}
+input[type="button"]:hover {
+    background: hsla(260, 50%, 50%, 1.0);
+}
+input[type="button"]:active {
+    background: hsla(260, 50%, 30%, 1.0);
+}
+
+input[type~="button"][value~="Facebook"] {
+    background: hsla(225, 59%, 41%, 1.0);
+    border-color: hsla(225, 88%, 27%, 1.0);
+    text-shadow: 0 -1px 0 hsla(225, 88%, 27%, 1.0);
+    box-shadow: 0 1px hsla(225, 52%, 54%, 1.0) inset;
+}
+input[type~="button"][value~="Facebook"]:hover {
+    background: hsla(225, 59%, 51%, 1.0);
+}
+input[type~="button"][value~="Facebook"]:active {
+    background: hsla(225, 59%, 31%, 1.0);
+}
+
+input[type~="button"][value~="Twitter"] {
+    background: hsla(206, 68%, 54%, 1.0);
+    border-color: hsla(206, 88%, 27%, 1.0);
+    text-shadow: 0 -1px 0 hsla(206, 88%, 27%, 1.0);
+    box-shadow: 0 1px hsla(206, 52%, 70%, 1.0) inset;
+}
+input[type~="button"][value~="Twitter"]:hover {
+    background: hsla(206, 59%, 61%, 1.0);
+}
+input[type~="button"][value~="Twitter"]:active {
+    background: hsla(206, 51%, 43%, 1.0);
+}
+
+input[type~="button"][value~="Reddit"] {
+    background: hsla(0, 78%, 49%, 1.0);
+    border-color: hsla(0, 88%, 27%, 1.0);
+    text-shadow: 0 -1px 0 hsla(0, 88%, 27%, 1.0);
+    box-shadow: 0 1px hsla(0, 52%, 70%, 1.0) inset;
+}
+input[type~="button"][value~="Reddit"]:hover {
+    background: hsla(0, 59%, 51%, 1.0);
+}
+input[type~="button"][value~="Reddit"]:active {
+    background: hsla(0, 59%, 31%, 1.0);
 }
 
 /* ##### LOGO ICON ##### */
@@ -229,18 +384,59 @@ footer {
     border-radius: 5px;
 }
 
+/***********************************/
+/*---------- LINKS & TAGS ---------*/
+/***********************************/
+
+/* ##### LINKS ##### */
+a.disabled {
+    pointer-events: none;
+}
+
+/*.responsive.img a img:hover {
+    opacity: 0.5;
+}*/
+
+/*.responsive.img a.disabled img:hover {
+    opacity: 1;
+}*/
+
+/* ##### TAGS ##### */
+.tag {
+    margin: 0px 4px 0px 4px;
+    padding: 2px 6px 2px 6px;
+    border-radius: 5px;
+    color: hsla(0, 0%, 100%, 1.0);
+    background-color: hsla(0, 0%, 0%, 0.65);
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1em;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/****************************/
+/*---------- LINES ---------*/
+/****************************/
+
+.vertical.line {
+    height: auto;
+    border: 1px solid hsl(0, 0%, 65%);
+    vertical-align: middle;
+}
+
 /******************************/
 /*---------- EFFECTS ---------*/
 /******************************/
 
 .header.shadow {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 2px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.24), 0 2px 10px 0 hsla(0, 0%, 0%, 0.2);
 }
 .button.shadow {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 2px 6px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.24), 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 .icon.shadow{
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 2px 10px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.24), 0 2px 10px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 /***************************/
@@ -249,4 +445,90 @@ footer {
 
 .text.centered {
     text-align: center;
+}
+
+/******************************/
+/*---------- COLORS ----------*/
+/******************************/
+
+/* ##### TAG COLORS ##### */
+.red.tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(0, 61%, 50%, 0.65) !important;
+}
+.pink.tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(300, 61%, 50%, 0.65) !important;
+}
+.purple.tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(260, 61%, 50%, 0.65) !important;
+}
+.blue.tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(228, 61%, 50%, 0.65) !important;
+}
+.teal.tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(189, 61%, 50%, 0.65) !important;
+}
+.green.tag {
+    color: hsl(48, 100%, 93%) !important;
+    background-color: hsla(106, 61%, 50%, 0.65) !important;
+}
+.orange.tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(32, 61%, 50%, 0.65) !important;
+}
+
+/* ##### RESPONSIVE IMG COLORS ##### */
+.red.responsive.img a:hover:after {
+    border-color: hsla(0, 61%, 25%, 0.85) !important;
+}
+.pink.responsive.img a:hover:after {
+    border-color: hsla(300, 61%, 25%, 0.85) !important;
+}
+.purple.responsive.img a:hover:after {
+    border-color: hsla(260, 61%, 25%, 0.85) !important;
+}
+.blue.responsive.img a:hover:after {
+    border-color: hsla(228, 61%, 25%, 0.85) !important;
+}
+.teal.responsive.img a:hover:after {
+    border-color: hsla(189, 61%, 25%, 0.85) !important;
+}
+.green.responsive.img a:hover:after {
+    border-color: hsla(106, 61%, 25%, 0.85) !important;
+}
+.orange.responsive.img a:hover:after {
+    border-color: hsla(32, 61%, 25%, 0.685) !important;
+}
+
+.red.responsive.img a .rimg-tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(0, 61%, 50%, 0.65) !important;
+}
+.pink.responsive.img a .rimg-tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(300, 61%, 50%, 0.65) !important;
+}
+.purple.responsive.img a .rimg-tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(260, 61%, 50%, 0.65) !important;
+}
+.blue.responsive.img a .rimg-tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(228, 61%, 50%, 0.65) !important;
+}
+.teal.responsive.img a .rimg-tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(189, 61%, 50%, 0.65) !important;
+}
+.green.responsive.img a .rimg-tag {
+    color: hsl(48, 100%, 93%) !important;
+    background-color: hsla(106, 61%, 50%, 0.65) !important;
+}
+.orange.responsive.img a .rimg-tag {
+    color: hsla(48, 100%, 93%, 1.0) !important;
+    background-color: hsla(32, 61%, 50%, 0.65) !important;
 }
