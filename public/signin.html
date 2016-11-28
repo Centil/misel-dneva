@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Thoughts</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="theme/css/thoughts.css">
+    </head>
+    <body>
+        <header>
+            <nav class="flex row header shadow">
+                <a class="logo icon" href="index.html">
+                    <img src="theme/img/logo/logo_icon.svg" alt="logo icon">
+                </a>
+                    <input class="search bar" type="text" name="search" placeholder="Search for thoughts" id="search-bar">
+                <a class="button signin shadow" href="signin.html">Sign in</a>
+            </nav>
+        </header>
+        <!-- header space -->
+        <div class="spacing nav header"></div>
+        <div class="flex column wrap main content">
+            <section class="flex row wrap thoughts login-registration">
+                <form class="flex column wrap login form">
+                    <div class="flex column wrap login info field">
+                        <h3>Sign in:</h3>
+                    </div>
+                    <div class="flex row wrap login user field">
+                        <label for="log-usr">Email:</label>
+                        <input type="email" id="log-usr" placeholder="your@email.com" required>
+                    </div>
+                    <div class="flex row wrap login password field">
+                        <label for="log-pass">Password:</label>
+                        <input type="password" id="log-pass" required>
+                    </div>
+                    <div class="flex column wrap login confirm field">
+                        <input type="submit" value="Confirm">
+                        <a class="forgot passowrd">forgot password?</a>
+                    </div>
+                </form>
+                <div class="flex row wrap seperator area">
+                    <hr class="left seperator">
+                    <span class="seperator text">OR</span>
+                    <hr class="right seperator">
+                </div>
+                <form class="flex column wrap registration form">
+                    <div class="flex column wrap register info field">
+                        <h3>Register:</h3>
+                    </div>
+                    <div class="flex row wrap register username field">
+                        <label for="reg-usr">Username:</label>
+                        <input type="text" id="reg-usr" placeholder="min 5 chars" required>
+                    </div>
+                    <div class="flex row wrap register password field">
+                        <label for="reg-pass">Password:</label>
+                        <input type="password" id="reg-pass" placeholder="min 10 chars of num & letters" required>
+                    </div>
+                    <div class="flex row wrap register conf-password field">
+                        <label for="reg-conf-pass">Conf. pass.:</label>
+                        <input type="password" id="reg-conf-pass" required>
+                    </div>
+                    <div class="flex row wrap register firstname field">
+                        <label for="reg-f-name">First name:</label>
+                        <input type="text" id="reg-f-name" required>
+                    </div>
+                    <div class="flex row wrap register lastname field">
+                        <label for="reg-l-name">Last name:</label>
+                        <input type="text" id="reg-l-name" required>
+                    </div>
+                    <div class="flex row wrap register email field">
+                        <label for="reg-email">Email:</label>
+                        <input type="email" id="reg-email" placeholder="(max 5 chars)" required>
+                    </div>
+                    <div class="flex row wrap register date-of-birth field">
+                        <label for="reg-b-date">Birth date:</label>
+                        <input type="text" id="reg-b-date" placeholder="DD-MM-YYYY" required>
+                    </div>
+                    <div class="flex row wrap register country field">
+                        <label for="reg-country">Coutry:</label>
+                        <input type="text" id="reg-country" required>
+                    </div>
+                    <div class="flex column wrap register confirm field">
+                        <div class="flex row wrap checkbox field">
+                            <input type="checkbox" id="agree" required>
+                            <label for="agree">I agree to the terms</label>
+                        </div>
+                        <input type="submit" value="Confirm registration">
+                    </div>
+                </form>
+            </section>
+        </div>
+        <footer class="flex row wrap">
+            <div class="flex site footer">
+                <div class="flex row wrap center links">
+                    <a class="flex column wrap" href="#"><span>Contact</span></a>
+                    <a class="flex column wrap" href="#"><span>Rules</span></a>
+                    <div class="vertical line"></div>
+                    <span class="flex column wrap copyright">&copy;2016 Daily Thoughts</span>
+                </div>
+            </div>
+        </footer>
+        <!-- scripts -->
+        <script src="theme/js/thoughts.js"></script>
+    </body>
+</html>

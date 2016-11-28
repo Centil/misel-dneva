@@ -1,113 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="svg4230"
-   viewBox="0 0 150 150"
-   height="150"
-   width="150"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="empty_pic.svg"
-   style="enable-background:new">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="987"
-     id="namedview23"
-     showgrid="true"
-     inkscape:object-paths="true"
-     inkscape:object-nodes="true"
-     inkscape:snap-bbox="true"
-     inkscape:zoom="2"
-     inkscape:cx="63.881716"
-     inkscape:cy="77.497896"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg4230">
-    <inkscape:grid
-       type="xygrid"
-       id="grid4151" />
-  </sodipodi:namedview>
-  <defs
-     id="defs4232">
-    <filter
-       id="filter4320"
-       style="color-interpolation-filters:sRGB">
-      <feBlend
-         id="feBlend4322"
-         in2="BackgroundImage"
-         mode="multiply" />
-    </filter>
-  </defs>
-  <metadata
-     id="metadata4235">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     style="opacity:0.97000002"
-     transform="translate(0,-902.36218)"
-     id="layer1" />
-  <g
-     style="display:none;filter:url(#filter4320)"
-     transform="translate(0,-930)"
-     id="layer3">
-    <g
-       id="g7191" />
-  </g>
-  <g
-     style="display:none"
-     id="layer4"
-     transform="translate(0,-618)" />
-  <rect
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     id="rect4151"
-     width="150"
-     height="150"
-     x="0"
-     y="0"
-     rx="0"
-     ry="0" />
-  <path
-     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 0,0 150,150"
-     id="path4153"
-     inkscape:connector-curvature="0" />
-  <path
-     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 0,150 150,0"
-     id="path4155"
-     inkscape:connector-curvature="0" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:15px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="37.177734"
-     y="79.138184"
-     id="text4157"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan4159"
-       x="37.177734"
-       y="79.138184">Empty pic</tspan></text>
+<svg id="svg4230" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" style="enable-background:new" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs id="defs4232">
+  <filter id="filter4320" style="color-interpolation-filters:sRGB">
+   <feBlend id="feBlend4322" in2="BackgroundImage" mode="multiply"/>
+  </filter>
+ </defs>
+ <metadata id="metadata4235">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer3" filter="url(#filter4320)" display="none" transform="translate(0,-930)"></g>
+ <g stroke="#000">
+  <rect id="rect4151" stroke-linejoin="round" rx="0" ry="0" height="150" width="150" stroke-linecap="round" y="0" x="0" stroke-width="5" fill="#fff"/>
+  <path id="path4153" d="m0 0 150 150" stroke-width="1px" fill="none"/>
+  <path id="path4155" d="m0 150 150-150" stroke-width="1px" fill="none"/>
+ </g>
+ <text id="text4157" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="15px" y="79.138184" x="37.177734" font-family="sans-serif" line-height="125%" fill="#000000"><tspan id="tspan4159" x="37.177734" y="79.138184">Empty pic</tspan></text>
 </svg>

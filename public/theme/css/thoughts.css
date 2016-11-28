@@ -2,6 +2,10 @@ body {
     margin: 0px;
 }
 
+body div.main {
+    min-height: 92vh;
+}
+
 /***********************************/
 /*---------- FLEX LAYOUT ----------*/
 /***********************************/
@@ -50,13 +54,21 @@ nav {
     background: linear-gradient(hsla(248, 39%, 39%, 1.0), hsla(270, 50%, 40%, 0.65), hsla(270, 50%, 40%, 0));
 }
 
+/* ##### SECTION LOGIN-REG ##### */
+section.login-registration {
+    width: 100%;
+    background: url("../img/banners/logo-banner-small.jpeg") no-repeat center;
+    background-size: cover;
+}
+
 /* ##### FOOTER ##### */
 footer {
-    height: 66px;
-    color: white;
+    color: hsla(0, 0%, 100%, 1.0);
     background-color: hsla(270, 50%, 40%, 1.0);
     text-align: center;
     vertical-align: middle; 
+    font: "Lucida Console", Monaco, monospace;
+    margin-top: 10px;
 }
 
 /**************************************************/
@@ -66,7 +78,8 @@ footer {
 /* +++++++++++++++++++++++ */
 /* +++++ MOBILE SIZE +++++ */
 /* ##### SEARCH BAR ##### */
-.search.bar{
+
+.search.bar {
     margin: 10px 0px 10px auto;
     width: 45%;
     font: "Lucida Console", Monaco, monospace;
@@ -77,10 +90,9 @@ footer {
     position: relative;
 }
 .search.bar:active, .search.bar:hover {
-    /*border-color: darkslateblue;*/
     border-color: hsla(270, 50%, 40%, 0.85);
 }
-.search.bar:focus, .search.bar::selection {
+.search.bar:focus {
     border-color: hsla(270, 50%, 40%, 1.0);
 }
 
@@ -114,7 +126,7 @@ footer {
 /* ##### HEADERS ##### */
 .thought.header {
     height: 50px;
-    color: white;
+    color: hsla(0, 0%, 100%, 1.0);
     background-color: hsla(270, 50%, 40%, 1.0);
     text-align: center;
     vertical-align: middle;
@@ -162,12 +174,103 @@ footer {
     top: 65%;
 }
 
-/* ##### VIDEO ##### */
+/* ++++++++++++++++++++++++ */
+/* +++++ REGISTRATION +++++ */
+/* ##### REGISTRATION ##### */
+.login-registration .login.form, .registration.form {
+    width: 100%;
+    margin: 30px 20px;
+}
+.login-registration .seperator.area {
+    width: 100%;
+    vertical-align: middle;
+}
+.login-registration .seperator.area hr {
+    min-width: 35%;
+    padding: 0px;
+    border: none;
+    border-bottom: 2px solid hsla(260, 50%, 40%, 1.0);
+}
+.login-registration .seperator.area .left.seperator {
+    margin-left: auto;
+    margin-right: 10px;
+}
+.login-registration .seperator.area .right.seperator {
+    margin-left: 10px;
+    margin-right: auto;
+}
+.login-registration .seperator.area .text.seperator {
+    min-width: 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.login-registration .form {
+    color: hsla(0, 0%, 100%, 1.0);
+    background-color: hsla(0, 0%, 0%, 0.65);
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.login-registration .form .field {
+    width: 100%;
+    font-weight: bold;
+}
+.login-registration .form .info.field {
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-size: 1.0em;
+    text-decoration: underline;
+}
+.login-registration .form .info.field h3 {
+    margin: 0px;
+    padding: 0px;
+}
+.login-registration .form .field label {
+    max-width: 40%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.login-registration .form .field input {
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+.login-registration .form .field.confirm.login input {
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+.login-registration .form .field input[type="submit"] {
+    margin-right: auto;
+    padding: 5px 10px;
+}
+.login-registration .form .field.login.confirm a {
+    margin: 0px auto 10px auto;
+    font-style: italic;
+}
+.login-registration .form .field .checkbox.field {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.login-registration .form .field .checkbox.field input {
+    max-width: 10%;
+}
+.login-registration .form .field .checkbox.field label {
+    max-width: 90%;
+    margin-right: auto;
+}
+
+/* ++++++++++++++++++++ */
+/* +++++++ VIDEO ++++++ */
+/* ##### THOUGHTS ##### */
 .video.thought.container {
     width: 100%;
+    margin: 5px;
+    border: 1px solid hsla(248, 39%, 39%, 1.0);
+    border-radius: 5px;
 }
-.video.thought.container .video.side .responsive.video {
-    
+.video.thought.container .video.side {
+    background-color: hsla(0, 0%, 98%, 1.0);
 }
 .video.thought.container .video.side .responsive.video video {
     width: 100%;
@@ -175,32 +278,370 @@ footer {
 }
 .video.thought.container .video.side .views.info {
     padding: 6px;
-    border: 2px solid black;
 }
-.video.thought.container .video.side .views.info .vertical.line {
+.video.thought.container .video.side .views.info .vertical.line, .video.thought.container .video.side .views.info .video.views {
     margin-left: auto;
 }
-.video.thought.container .video.side .views.info .video.views {
-    margin-left: auto;
+.video.thought.container .video.side .views.info .views.icon {
+    max-height: 22px;
 }
 .video.thought.container .info.side {
-    
+    width: 100%;
+    background-color: hsla(0, 0%, 90%, 0.45);
 }
-.video.thought.container .info.side .social.media {
-    
+.video.thought.container .info.side .video.info h3 {
+    color: hsla(0, 0%, 100%, 1.0);
+    background-color: hsla(0, 0%, 0%, 0.65);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: normal;
+    max-height: 2.4em;
+    margin-top: 0px;
+    padding: 0px 5px 0px 5px;
+}
+.video.thought.container .info.side .video.info p {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-top: 0px;
+}
+.video.thought.container .info.side .video.vote {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+.video.thought.container .info.side .video.vote input[type="radio"] + label {
+    padding: 10px 0px;
+}
+.video.thought.container .info.side .video.comments, .video.thought.container .info.side .social.media {
+    width: 100%;
+    margin-top: auto;
+}
+.video.thought.container .info.side .video.comments a {
+    width: 98%;
+    color: white;
+    background-color: hsla(266, 30%, 44%, 1.0);
+    text-decoration: none;
+    text-align: center;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+.video.thought.container .info.side .social.media input[type="button"] {
+    height: 30px;
+}
+
+/* ##### THOUGHT AREA ##### */
+.thought .video.thought.area, .thought .video.vote.area, .thought .video.comment.area, .thought .video.list.comments.area {
+    width: 96%;
+    margin: 10px 2%;
+    padding: 0px;
+}
+.thought .video.thought.area video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+.thought .video.thought.area .video.info.area {
+    background-color: hsla(0, 0%, 98%, 0.9);
+    padding-top: 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+.thought .video.thought.area .video.info.area h3 {
+    width: 100%;
+    color: hsla(0, 0%, 100%, 1.0);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: hsla(260, 40%, 20%, 0.85);
+    word-wrap: break-word;
+    word-break: normal;
+    font-weight: bold;
+    margin: 0px 2% 0px 2%;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+.thought .video.thought.area .video.info.area .tags.area {
+    width: 65%;
+    margin-top: 5px;
+}
+.thought .video.thought.area .video.info.area .tags.area .video.main.tag {
+    margin-left: 2%;
+    margin-right: auto;
+}
+.thought .video.thought.area .video.info.area .views.area {
+    width: 35%;
+    margin-top: 5px;
+}
+.thought .video.thought.area .video.info.area .views.area .views.tag {
+    margin-left: auto;
+}
+.thought .video.thought.area .video.info.area .views.area .views.icon {
+    max-height: 22px;
+    margin-right: 2%;
+}
+.thought .video.thought.area .video.info.area .video.user {
+    width: 100%;
+    margin: 5px 0px 0px 2%;
+}
+.thought .video.thought.area .video.info.area .video.user .username {
+    font-weight: bold;
+}
+.thought .video.thought.area .video.info.area .video.user .video.time {
+    font-style: italic;
+    text-decoration: underline;
+}
+.thought .video.thought.area .video.info.area .social.media {
+    width: 100%;
+}
+.thought .video.thought.area .video.info.area .social.media > input[type="button"]{
+    padding: 7px 0px;
+}
+.thought .video.vote.area h3, .thought .video.comment.area h3, .thought .video.list.comments.area h4 {
+    width: 100%;
+    color: hsla(0, 0%, 100%, 1.0);
+    background-color: hsla(270, 50%, 40%, 1.0);
+    padding: 5px 0px 5px 8px;
+    border-radius: 5px;
+}
+.thought .video.comment.area .user.picture {
+    max-width: 35%;
+}
+.thought .video.comment.area .user.picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.thought .video.comment.area form {
+    width: 60%;
+    margin: 0px 0px 0px 5%;
+}
+.thought .video.comment.area form textarea {
+    width: 100%;
+    height: 80%;
+    resize: none;
+}
+.thought .video.comment.area form input[type="submit"] {
+    width: auto;
+    margin-left: auto;
+    padding: 1% 5%;
+}
+.thought .video.list.comments.area h4 {
+    padding: 8px 0px 8px 8px;
+}
+.thought .video.list.comments.area ul {
+    width: 100%;
+    padding: 0px;
+}
+.thought .video.list.comments.area .left.side {
+    max-width: 25%;
+    height: auto;
+}
+.thought .video.list.comments.area .left.side img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.thought .video.list.comments.area .left.side .report.user {
+    width: 100%;
+    margin: 8px 0px;
+    padding: 3px 0px;
+}
+.thought .video.list.comments.area .right.side {
+    width: 73%;
+    margin-left: 2%;
+}
+.thought .video.list.comments.area .right.side .user.post {
+    width: 100%;
+    max-height: 17%;
+}
+.thought .video.list.comments.area .right.side .user.post .user.name{
+    color: hsla(0, 0%, 100%, 1.0);
+    background-color: hsla(260, 40%, 40%, 0.85);
+    padding: 1% 6px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.thought .video.list.comments.area .right.side .user.post .post.time{
+    margin-left: auto;
+    font-weight: bold;
+}
+.thought .video.list.comments.area .right.side .expression.post {
+    height: 78%;
+}
+.thought .video.list.comments.area .right.side .expression.post textarea {
+    width: 100%;
+    height: 80%;
+    margin-top: auto;
+    resize: none;
+}
+/* ##### THOUGHT RESULTS ##### */
+.thoughts.results .search.results.info, .thoughts.results .search.results.content {
+    width: 100%;
+}
+.thoughts.results .search.results.info .results.info.box {
+    font-weight: bold;
+    background-color: hsla(280, 55%, 55%, 1.0);
+    margin: auto;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+.thoughts.results .search.results.content {
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+}
+.thoughts.results .search.results.content .video.search.result {
+    width: 96%;
+    background-color: hsla(0, 0%, 60%, 0.25);
+    margin: 5px auto;
+    border-radius: 5px;
+}
+.thoughts.results .search.results.content .video.search.result .image.info {
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.thoughts.results .search.results.content .video.search.result .image.info img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.thoughts.results .search.results.content .video.search.result .video.info {
+    max-width: 100%;
+    background-color: hsla(0, 0%, 98%, 0.9);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.thoughts.results .search.results.content .video.search.result .video.info .header.name.info h3 {
+    width: 100%;
+    max-height: 3.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: hsla(0, 0%, 100%, 1.0);
+    background-color: hsla(260, 40%, 20%, 0.85);
+    margin: 0px 0px 10px 0px;
+    padding: 5px;
+}
+.thoughts.results .search.results.content .video.search.result .video.info .tags.info {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.thoughts.results .search.results.content .video.search.result .views.info {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.thoughts.results .search.results.content .video.search.result .views.info .time.info {
+    /*color: hsla(0, 0%, 100%, 1.0);
+    background-color: hsla(0, 0%, 40%, 0.65);*/
+    margin-left: 5px;
+    font-weight: bold;
+    /*padding-right: 8px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 50px;*/
+}
+.thoughts.results .search.results.content .video.search.result .views.info .time.info time {
+    font-style: italic;
+    text-decoration: underline;
+}
+.thoughts.results .search.results.content .video.search.result .views.info .video.views {
+    margin-left: auto;
+}
+.thoughts.results .search.results.content .video.search.result .views.info .views.icon {
+    max-height: 22px;
+    margin-right: 2%;
+}
+.thoughts.results .search.results.content .video.search.result .link.info {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.thoughts.results .search.results.content .video.search.result .link.info .user.info {
+    margin: auto 0px auto 5px;
+    font-weight: bold;
+}
+.thoughts.results .search.results.content .video.search.result .link.info .about.link {
+    margin-left: auto;
+    margin-right: 2%;
+    padding: 5px;
+}
+.thoughts.results .search.results.index {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.thoughts.results .search.results.index .result.index.buttons {
+    margin-left: auto;
+}
+.thoughts.results .search.results.index .result.index.buttons input[type="button"] {
+    width: 70px;
+    padding: 5px 0px;
+    margin-left: 3px;
+}
+.thoughts.results .search.results.index .result.index.buttons input[type="button"].middle.number {
+    width: 45px;
+}
+
+/* ##### FOOTER ##### */
+footer .site.footer, footer .site.footer .links {
+    width: 100%;
+}
+footer .site.footer .links a {
+    width: 100%;
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 1.0) !important;
+    margin: 10px 5px 10px 5px;
+}
+footer .site.footer .links a:hover {
+    text-decoration: underline;
+    color: hsla(60, 55%, 85%, 1.0) !important;
+}
+footer .site.footer .links a:active {
+    text-decoration: underline;
+    color: hsla(60, 55%, 55%, 1.0) !important;
+}
+footer .site.footer .vertical.line {
+    visibility: hidden;
+    margin: 0px;
+}
+footer .site.footer .copyright {
+    width: 100%;
+    margin: 10px 5px 10px 5px;
 }
 
 /* +++++++++++++++++++++++ */
 /* +++++ TABLET SIZE +++++ */
 @media only screen and (min-width: 414px) {
     
+    /* ##### SECTION LOGIN-REG ##### */
+    section.login-registration {
+        background: url("../img/banners/logo-banner-normal.jpeg") no-repeat center;
+    }
+    .login-registration .login.form, .registration.form {
+        max-width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .login-registration .form {
+        padding: 20px 60px;
+    }
+    .login-registration .form .field input {
+        width: 50%;
+    }
+    .login-registration .form .field input[type="checkbox"] {
+        width: auto;
+    }
+    .login-registration .form .field input[type="submit"] {
+        width: auto;
+    }
+    
     /* ##### SEARCH BAR ##### */
-    .search.bar{
+    .search.bar {
         margin-left: auto;
         width: 60%;
         background-image: url(../img/icons/search_icon.svg);
         background-position: right;
-        background-size: auto;
+        background-size: 30px;
         background-repeat: no-repeat;
     }
     
@@ -249,9 +690,64 @@ footer {
         top: 75%;
     }
     
+    /* ##### THOUGHT AREA ##### */
+    .thought .video.thought.area, .thought .video.vote.area, .thought .video.comment.area, .thought .video.list.comments.area {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .thought .video.vote.area input[type="radio"] + label {
+        width: 40%;
+        padding: 2% 2%;
+    }
+}
+
+/* ##### BETWEEN TRANSITION ##### */
+@media only screen and (min-width: 500px) {
+    /* ##### THOUGHT RESULTS ##### */
+    .thoughts.results .search.results.content .video.search.result .image.info {
+        max-width: 50%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .thoughts.results .search.results.content .video.search.result .image.info img {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .thoughts.results .search.results.content .video.search.result .video.info {
+        max-width: 50%;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .thoughts.results .search.results.content .video.search.result .video.info .header.name.info h3 {
+        margin: 0px 2% 10px 5px;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-width: 641px) {
     /* ##### VIDEO ##### */
-    .video.side {
-        min-width: 400px;
+    .video.thought.container .video.side, .video.thought.container .info.side {
+        max-width: 50%;
+        height: auto;
+    }
+
+    /* ##### FOOTER ##### */
+    footer {
+        padding: 11px 0px;
+    }
+    footer .site.footer .links a {
+        width: auto;
+        margin-left: auto;
+    }
+    footer .site.footer .vertical.line {
+        visibility: visible;
+        margin: 10px 5px 10px auto;
+    }
+    footer .site.footer .copyright {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -259,8 +755,21 @@ footer {
 /* +++++ PC/NOTEBOOK SIZE +++++ */
 @media only screen and (min-width: 1024px) {
     
+    /* ##### SECTION LOGIN-REG ##### */
+    section.login-registration {
+        background: url("../img/banners/logo-banner-big.jpeg") no-repeat center;
+    }
+    .login-registration .login.form, .registration.form {
+        max-width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .login-registration .form .field input {
+        width: 70%;
+    }
+    
     /* ##### SEARCH BAR ##### */
-    .search.bar{
+    .search.bar {
         width: 70%;
     }
     
@@ -297,6 +806,66 @@ footer {
         font-size: 1.8em;
         top: 78%;
     }
+    
+    /* ##### VIDEO ##### */
+    .video.thought.container {
+        max-width: 480px;
+    }
+    
+    /* ##### THOUGHT AREA ##### */
+    .thought .video.thought.area {
+        width: 40%;
+        margin-top: 20px;
+    }
+    .thought .expression.area {
+        width: 40%;
+        margin: 20px auto;
+    }
+    .thought .video.vote.area, .thought .video.comment.area {
+        width: 100%;
+        margin-bottom: auto;
+    }
+    .thought .video.vote.area input[type="radio"] + label {
+        width: 80%;
+        height: 100%;
+        margin: 20px auto;
+    }
+    .thought .video.list.comments.area {
+        max-width: 80%;
+    }
+    .thought .video.list.comments.area .video.reply {
+        width: 48%;
+        margin: 0px auto 10px auto;
+    }
+    
+    /* ##### THOUGHT RESULTS ##### */
+    .thoughts.results .search.results.content .video.search.result .image.info {
+        max-width: 35%;
+    }
+    .thoughts.results .search.results.content .video.search.result .video.info {
+        max-width: 65%;
+    }
+}
+
+/* ##### BETWEEN TRANSITION ##### */
+@media only screen and (min-width: 1200px) {
+    /* ##### THOUGHT RESULTS ##### */
+    .thoughts.results .search.results.content .video.search.result {
+        max-width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .thoughts.results .search.results.content .video.search.result .image.info {
+        max-width: 45%;
+    }
+    .thoughts.results .search.results.content .video.search.result .video.info {
+        max-width: 55%;
+    }
+}
+@media only screen and (min-width: 1344px) {
+    .video.thought.container {
+        max-width: 640px;
+    }
 }
 
 /************************************************/
@@ -321,15 +890,67 @@ footer {
     background-color: hsla(270, 50%, 40%, 0.65);
 }
 
+/* ##### RADIO BUTTONS ##### */
+input[type="radio"]{
+    visibility: hidden;
+    position: absolute;
+}
+input[type="radio"] + label {
+    width: 48%;
+    color: hsla(0, 0%, 100%, 1.0);
+    background-color: hsla(260, 50%, 45%, 1.0);
+    box-shadow: inset 0 0 0 1px hsla(270, 47%, 29%, 1.0);
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 1%;
+    padding: 5px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+input[type="radio"]:disabled + label {
+    background-color: hsla(260, 18%, 39%, 1.0);
+    box-shadow: inset 0 0 0 1px hsla(260, 18%, 29%, 1.0);;
+    cursor: default;
+}
+input[type="radio"]:not([disabled]):not(:checked):hover + label {
+    background-color: hsla(260, 50%, 55%, 1.0);
+    box-shadow: inset 0 0 0 1px hsla(270, 47%, 29%, 1.0), 0 2px 5px hsla(270, 48%, 19%, 1.0);
+}
+input[type="radio"]:checked + label {
+    background-color: hsla(260, 50%, 35%, 1.0);
+    box-shadow: inset 0 0 0 1px hsla(270, 47%, 29%, 1.0), inset 0 5px 50px hsla(270, 48%, 19%, 1.0);
+}
+
+/* ##### INPUT SUBMIT ##### */
+input[type="submit"] {
+    width: 80px;
+    color: hsla(0, 0%, 100%, 1.0);
+    background: hsla(260, 50%, 40%, 1.0);
+    border: 1px solid hsla(260, 50%, 20%, 1.0);
+    border-radius: 5px;
+    padding: 0px 5px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 0 -1px 0 hsla(260, 88%, 27%, 1.0);
+    box-shadow: 0 1px hsla(260, 52%, 54%, 1.0) inset;
+}
+input[type="submit"]:hover {
+    background: hsla(260, 50%, 50%, 1.0);
+}
+input[type="submit"]:active {
+    background: hsla(260, 50%, 30%, 1.0);
+}
+
 /* ##### INPUT BUTTONS ##### */
 input[type="button"] {
-    width: 100px;
-    color: white;
+    width: 80px;
+    color: hsla(0, 0%, 100%, 1.0);
     background: hsla(260, 50%, 40%, 1.0);
-    border: 1px solid;
-    margin: 10px 6px 10px auto;
+    border: 1px solid hsla(260, 50%, 20%, 1.0);
     border-radius: 5px;
-    padding: 14px 19px; 
+    margin: 10px auto 10px auto;
+    padding: 0px 5px; 
     font-weight: bolder;
 }
 input[type="button"]:hover {
@@ -384,22 +1005,44 @@ input[type~="button"][value~="Reddit"]:active {
     border-radius: 5px;
 }
 
-/***********************************/
-/*---------- LINKS & TAGS ---------*/
-/***********************************/
+/*******************************************/
+/*---------- LINKS & TAGS & LISTS ---------*/
+/*******************************************/
 
 /* ##### LINKS ##### */
-a.disabled {
-    pointer-events: none;
+a.report.user {
+    text-decoration: none;
+    cursor: pointer;
+}
+a.report.user:hover {
+    text-decoration: underline;
+    color: hsla(0, 0%, 90%, 1.0) !important;
+}
+a.report.user:active {
+    color: hsla(0, 0%, 75%, 1.0) !important;
 }
 
-/*.responsive.img a img:hover {
-    opacity: 0.5;
-}*/
+a.about.link {
+    text-decoration: none;
+    cursor: pointer;
+    color: hsla(0, 0%, 100%, 1.0);
+    background: hsla(260, 50%, 40%, 1.0);
+    border: 1px solid hsla(260, 50%, 20%, 1.0);
+    border-radius: 5px;
+    font-weight: bolder;
+    text-shadow: 0 -1px 0 hsla(260, 88%, 27%, 1.0);
+    box-shadow: 0 1px hsla(260, 52%, 54%, 1.0) inset;
+}
+a.about.link:hover {
+    background: hsla(260, 50%, 50%, 1.0);
+}
+a.about.link:active {
+    background: hsla(260, 50%, 30%, 1.0);
+}
 
-/*.responsive.img a.disabled img:hover {
-    opacity: 1;
-}*/
+a.disabled {
+    cursor: default;
+}
 
 /* ##### TAGS ##### */
 .tag {
@@ -413,6 +1056,20 @@ a.disabled {
     text-align: center;
     font-style: italic;
     font-weight: bold;
+}
+
+/* ##### LISTS ##### */
+li.video.reply {
+    width: 100%;
+    list-style-type: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid hsla(260, 33%, 20%, 1.0);
+}
+li.video.search.result {
+    width: 100%;
+    list-style-type: none;
+    margin-bottom: 10px;
+    /*border-bottom: 1px solid hsla(260, 33%, 20%, 1.0);*/
 }
 
 /****************************/
@@ -445,6 +1102,34 @@ a.disabled {
 
 .text.centered {
     text-align: center;
+}
+
+.shown.results {
+    color: hsla(48, 100%, 90%, 1.0);
+}
+.total.results {
+     color: hsla(48, 100%, 80%, 1.0);
+}
+
+textarea {
+    outline: none;
+    border: 2px solid hsla(260, 50%, 20%, 1.0);
+    border-radius: 2px;
+    font-size: 1.2em;
+}
+textarea:disabled {
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+    outline: none;
+}
+input[type="text"]:not([disabled]):hover, textarea:not([disabled]):hover, input[type="email"]:not([disabled]):hover, input[type="password"]:not([disabled]):hover, input[type="date"]:not([disabled]):hover {
+    border-color: hsla(260, 50%, 45%, 1.0);
+    box-shadow: 0px 0px 10px 3px hsla(260, 50%, 45%, 0.35);
+}
+input[type="text"]:focus, textarea:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="date"]:focus {
+    box-shadow: 0px 0px 10px 3px hsla(260, 50%, 20%, 0.35);
 }
 
 /******************************/
