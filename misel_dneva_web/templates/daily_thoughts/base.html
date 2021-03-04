@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Thoughts</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="{% static 'css/thoughts.css' %}">
+    </head>
+    <body>
+        <header>
+            <nav class="flex row header shadow">
+                <a class="logo icon" href="{% url 'index' %}">
+                    <img src="{% static 'img/logo/logo_icon.svg' %}" alt="logo icon">
+                </a>
+                    <input class="search bar" type="text" name="search" placeholder="Search for thoughts" id="search-bar">
+                <a class="button signin shadow" href="{% url 'signin' %}">Sign in</a>
+            </nav>
+        </header>
+        <!-- header space -->
+        <div class="spacing nav header"></div>{% block banner %}{% endblock %}
+        <div class="flex column wrap main content">{% block content %}{% endblock %}
+        </div>
+        <footer>
+            <div class="flex site footer">
+                <div class="flex row wrap center links">
+                    <a class="flex column wrap" href="#"><span>Contact</span></a>
+                    <a class="flex column wrap" href="#"><span>Rules</span></a>
+                    <div class="vertical line"></div>
+                    <span class="flex column wrap copyright">&copy;2016 Daily Thoughts</span>
+                </div>
+            </div>
+        </footer>
+        <!-- scripts -->
+        <script src="{% static 'js/thoughts.js' %}"></script>
+    </body>
+</html>

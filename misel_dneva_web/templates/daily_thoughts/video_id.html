@@ -1,0 +1,140 @@
+{% extends "daily_thoughts/base.html" %}
+{% load static %}
+
+{% block content %}
+            <section class="flex row wrap thought">
+                <div class = "flex row wrap video thought area">
+                    <div class="flex column wrap">
+                        <video controls>
+                            <source src="../../static/uploads/profiles/videos/video_500121.webm" type="video/webm">
+                            <!--<source src="uploads/" type="video/mp4">-->
+                        </video>
+                    </div>
+                    <div class="flex row wrap video info area">
+                        <h3>
+                            One ring to rule them all. One ring to find them. One Ring to bring them all and in the darkness bind them!
+                        </h3>
+                        <div class="flex row wrap tags area">
+                            <span class="video main teal tag">
+                                #the ring
+                            </span>
+                        </div>
+                        <div class="flex row wrap views area">
+                            <span class="video views tag">
+                                121,3k
+                            </span>
+                            <img class="views icon" src="../../static/img/icons/eye_icon.svg" alt="eye">
+                        </div>
+                        <span class="video user">
+                            By 
+                            <span class="username">Jan</span>, shared on <time class="video time" datetime="2016-11-14">
+                                14.11.2016
+                            </time>
+                        </span>
+                        <div class="flex row wrap social media">
+                            <input type="button" value="Facebook">
+                            <input type="button" value="Twitter">
+                            <input type="button" value="Reddit">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex row wrap expression area">
+                    <div class="flex row wrap video vote area">
+                        <h3 class="header shadow">What do you think about the thought?</h3>
+                        <input type="radio" name="vote1" id="voteS1" value="Smart" disabled="disabled">
+                        <label for="voteS1">Smart</label>
+                        <input type="radio" name="vote1" id="voteD1" value="Dull" disabled="disabled">
+                        <label for="voteD1">Dull</label>
+                    </div>
+                    <div class="flex row wrap video comment area">
+                        <h3 class="header shadow">Express yourself:</h3>
+                        <div class="flex column wrap user picture">
+                            <img src="../../static/uploads/profiles/pictures/profile_pic_12.jpg" alt="user picture">
+                        </div>
+                        <form class="flex row wrap">
+                            <textarea maxlength="500" placeholder="Type in (max 500 chars)"></textarea>
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="flex row wrap video list comments area" id="comments">
+                    <h4 class="header shadow">Others expressions 
+                        (<span>4</span>):
+                    </h4>
+                    <!-- Video reply 1-->
+                    <ul class="flex row wrap">
+                        <li class ="flex row wrap video reply">
+                            <div class="flex column wrap left side">
+                                <img class="user picture reply" src="../../static/uploads/profiles/pictures/profile_pic_05.jpg" alt="user picture">
+                                <a class="report user tag" href="#">Report</a>
+                            </div>
+                            <div class="flex column wrap right side">
+                                <div class="flex row wrap user post">
+                                    <span class="user name">Kevin</span>
+                                    <span class="post time">
+                                        <time datetime="P12D">12</time> days ago
+                                    </span>
+                                </div>
+                                <div class="flex row wrap expression post">
+                                    <textarea maxlength="500" disabled>Nice!</textarea>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Video reply 2-->
+                        <li class ="flex row wrap video reply">
+                            <div class="flex column wrap left side">
+                                <img class="user picture reply" src="../../static/uploads/profiles/pictures/profile_pic_17.jpg" alt="usr picture">
+                                <a class="report user tag" href="#">Report</a>
+                            </div>
+                            <div class="flex column wrap right side">
+                                <div class="flex row wrap user post">
+                                    <span class="user name">Robert</span>
+                                    <span class="post time">
+                                        <time datetime="P12D">12</time> days ago
+                                    </span>
+                                </div>
+                                <div class="flex row wrap expression post">
+                                    <textarea maxlength="500" disabled>I couldn't agree more.</textarea>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Video reply 3-->
+                        <li class ="flex row wrap video reply">
+                            <div class="flex column wrap left side">
+                                <img class="user picture reply" src="../../static/uploads/profiles/pictures/profile_pic_16.jpg" alt="usr picture">
+                                <a class="report user tag" href="#">Report</a>
+                            </div>
+                            <div class="flex column wrap right side">
+                                <div class="flex row wrap user post">
+                                    <span class="user name">Mellisa</span>
+                                    <span class="post time">
+                                        <time datetime="P13D">13</time> days ago
+                                    </span>
+                                </div>
+                                <div class="flex row wrap expression post">
+                                    <textarea maxlength="500" disabled>Your thought made my day, thank you :)</textarea>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Video reply 4-->
+                        <li class ="flex row wrap video reply">
+                            <div class="flex column wrap left side">
+                                <img class="user picture reply" src="../../static/uploads/profiles/pictures/profile_pic_01.jpg" alt="usr picture">
+                                <a class="report user tag" href="#">Report</a>
+                            </div>
+                            <div class="flex column wrap right side">
+                                <div class="flex row wrap user post">
+                                    <span class="user name">Thimoty</span>
+                                    <span class="post time">
+                                        <time datetime="P13D">13</time> days ago
+                                    </span>
+                                </div>
+                                <div class="flex row wrap expression post">
+                                    <textarea maxlength="500" disabled>YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO! YOLO!</textarea>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+{% endblock %}

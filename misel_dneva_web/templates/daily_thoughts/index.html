@@ -1,0 +1,313 @@
+{% extends "daily_thoughts/base.html" %}
+{% load static %}
+
+{% block banner %}
+        <!-- banner logo -->
+        <div class="banner">
+            <div class="logo box">
+                <img class="logo" src="{% static 'img/logo/logo.svg' %}" alt="logo">
+                <div class="distance">
+                    <p class="distance top">
+                        <span>Motivate people</span>
+                    </p>
+                    <p>
+                        <span>Share your thoughts</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+{% block content %}
+            <!-- popular daily thoughts -->
+            <section>
+                <header>
+                    <div class="thought header shadow">
+                       <h2>Popular daily thoughts</h2>
+                    </div>
+                </header>
+                <div class="flex row wrap center popular thought content">
+                    <div class="blue responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_01.jpg' %}" alt="popular daily thought 1">
+                            <span class="rimg-tag">future</span>
+                        </a>
+                    </div>
+                    <div class="purple responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_02.jpg' %}" alt="popular daily thought 2">
+                            <span class="rimg-tag">kids</span>
+                        </a>
+                    </div>
+                    <div class="green responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_03.jpg' %}" alt="popular daily thought 3">
+                            <span class="rimg-tag">science</span>
+                        </a>
+                    </div>
+                    <div class="orange responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_04.jpg' %}" alt="popular daily thought 4">
+                            <span class="rimg-tag">school</span>
+                        </a>
+                    </div>
+                    <div class="green responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_05.jpg' %}" alt="popular daily thought 5">
+                            <span class="rimg-tag">tech</span>
+                        </a>
+                    </div>
+                    <div class="teal responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_06.jpg' %}" alt="popular daily thought 6">
+                            <span class="rimg-tag">religion</span>
+                        </a>
+                    </div>
+                    <div class="pink responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_07.jpg' %}" alt="popular daily thought 7">
+                            <span class="rimg-tag">love</span>
+                        </a>
+                    </div>
+                    <div class="red responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_08.jpg' %}" alt="popular daily thought 8">
+                            <span class="rimg-tag">kids</span>
+                        </a>
+                    </div>
+                    <div class="orange responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_09.jpg' %}" alt="popular daily thought 9">
+                            <span class="rimg-tag">skills</span>
+                        </a>
+                    </div>
+                    <div class="orange responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_10.jpg' %}" alt="popular daily thought 10">
+                            <span class="rimg-tag">maths</span>
+                        </a>
+                    </div>
+                    <div class="blue responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_11.jpg' %}" alt="popular daily thought 11">
+                            <span class="rimg-tag">politics</span>
+                        </a>
+                    </div>
+                    <div class="teal responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_12.jpg' %}" alt="popular daily thought 12">
+                            <span class="rimg-tag">ring</span>
+                        </a>
+                    </div>
+                    <div class="red responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_13.jpg' %}" alt="popular daily thought 13">
+                            <span class="rimg-tag">workout</span>
+                        </a>
+                    </div>
+                    <div class="pink responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_14.jpg' %}" alt="popular daily thought 14">
+                            <span class="rimg-tag">feminism</span>
+                        </a>
+                    </div>
+                    <div class="green responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_15.jpg' %}" alt="popular daily thought 15">
+                            <span class="rimg-tag">weed</span>
+                        </a>
+                    </div>
+                    <div class="pink responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_16.jpg' %}" alt="popular daily thought 16">
+                            <span class="rimg-tag">beauty</span>
+                        </a>
+                    </div>
+                    <div class="blue responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_17.jpg' %}" alt="popular daily thought 17">
+                            <span class="rimg-tag">tech</span>
+                        </a>
+                    </div>
+                    <div class="responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_18.jpg' %}" alt="popular daily thought 18">
+                            <span class="rimg-tag">skills</span>
+                        </a>
+                    </div>
+                    <div class="orange responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_19.jpg' %}" alt="popular daily thought 19">
+                            <span class="rimg-tag">job</span>
+                        </a>
+                    </div>
+                    <div class="purple responsive img">
+                        <a href="{% url 'video_id' %}">
+                            <img src="{% static 'uploads/profiles/pictures/profile_pic_20.jpg' %}" alt="popular daily thought 20">
+                            <span class="rimg-tag">rap</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- trending daily thoughts -->
+            <section>
+                <header>
+                    <div class="thought header shadow">
+                        <h2>Trending daily thoughts</h2>
+                    </div>
+                </header>
+                <div class="flex row wrap center daily thought content">
+                    <div class ="flex row wrap video thought container">
+                        <div class = "flex column video side">
+                            <div class ="responsive video">
+                                <video controls>
+                                    <source src="{% static 'uploads/profiles/videos/video_500121.webm' %}" type="video/webm">
+                                    <!--<source src="uploads/" type="video/mp4">-->
+                                </video>
+                            </div>
+                            <div class="flex row wrap views info">
+                                <span class="video main teal tag">#the ring</span>
+                                <div class="vertical line"></div>
+                                <span class="video views tag">
+                                    121,3k
+                                </span>
+                                <img class="views icon" src="{% static 'img/icons/eye_icon.svg' %}" alt="eye">
+                            </div>
+                        </div>
+                        <div class="flex column wrap info side">
+                            <div class="flex column video info">
+                                <h3>One ring to rule them all. One ring to find them. One Ring to bring them all and in the darkness bind them!</h3>
+                                <p>By <span class="username">Jan</span></p>
+                            </div>
+                            <div class="flex row wrap video vote">
+                                <input type="radio" name="vote1" id="voteS1" value="Smart" disabled="disabled">
+                                <label for="voteS1">Smart</label>
+                                <input type="radio" name="vote1" id="voteD1" value="Dull" disabled="disabled">
+                                <label for="voteD1">Dull</label>
+                            </div>
+                            <div class="flex column video comments">
+                                <a href="{% url 'video_id' %}#comments">Read comments</a>
+                            </div>
+                            <div class="flex row wrap social media">
+                                <input type="button" value="Facebook">
+                                <input type="button" value="Twitter">
+                                <input type="button" value="Reddit">
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="flex row wrap video thought container">
+                        <div class = "flex column video side">
+                            <div class ="responsive video">
+                                <video controls>
+                                    <source src="{% static 'uploads/profiles/videos/video_500121.webm' %}" type="video/webm">
+                                    <!--<source src="uploads/" type="video/mp4">-->
+                                </video>
+                            </div>
+                            <div class="flex row wrap views info">
+                                <span class="video main teal tag">#the ring</span>
+                                <div class="vertical line"></div>
+                                <span class="video views tag">
+                                    121,3k
+                                </span>
+                                <img class="views icon" src="{% static 'img/icons/eye_icon.svg' %}" alt="eye">
+                            </div>
+                        </div>
+                        <div class="flex column wrap info side">
+                            <div class="flex column video info">
+                                <h3>One ring to rule them all. One ring to find them. One Ring to bring them all and in the darkness bind them!</h3>
+                                <p>By <span class="username">Jan</span></p>
+                            </div>
+                            <div class="flex row wrap video vote">
+                                <input type="radio" name="vote2" id="voteS2" value="Smart2">
+                                <label for="voteS2">Smart</label>
+                                <input type="radio" name="vote2" id="voteD2" value="Dull">
+                                <label for="voteD2">Dull</label>
+                            </div>
+                            <div class="flex column video comments">
+                                <a href="{% url 'video_id' %}#comments">Read comments</a>
+                            </div>
+                            <div class="flex row wrap social media">
+                                <input type="button" value="Facebook">
+                                <input type="button" value="Twitter">
+                                <input type="button" value="Reddit">
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="flex row wrap video thought container">
+                        <div class = "flex column video side">
+                            <div class ="responsive video">
+                                <video controls>
+                                    <source src="{% static 'uploads/profiles/videos/video_500121.webm' %}" type="video/webm">
+                                    <!--<source src="uploads/" type="video/mp4">-->
+                                </video>
+                            </div>
+                            <div class="flex row wrap views info">
+                                <span class="video main teal tag">#the ring</span>
+                                <div class="vertical line"></div>
+                                <span class="video views tag">
+                                    121,3k
+                                </span>
+                                <img class="views icon" src="{% static 'img/icons/eye_icon.svg' %}" alt="eye">
+                            </div>
+                        </div>
+                        <div class="flex column wrap info side">
+                            <div class="flex column video info">
+                                <h3>One ring to rule them all. One ring to find them. One Ring to bring them all and in the darkness bind them!</h3>
+                                <p>By <span class="username">Jan</span></p>
+                            </div>
+                            <div class="flex row wrap video vote">
+                                <input type="radio" name="vote3" id="voteS3" value="Smart">
+                                <label for="voteS3">Smart</label>
+                                <input type="radio" name="vote3" id="voteD3" value="Dull">
+                                <label for="voteD3">Dull</label>
+                            </div>
+                            <div class="flex column video comments">
+                                <a href="{% url 'video_id' %}#comments">Read comments</a>
+                            </div>
+                            <div class="flex row wrap social media">
+                                <input type="button" value="Facebook">
+                                <input type="button" value="Twitter">
+                                <input type="button" value="Reddit">
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="flex row wrap video thought container">
+                        <div class = "flex column video side">
+                            <div class ="responsive video">
+                                <video controls>
+                                    <source src="{% static 'uploads/profiles/videos/video_500121.webm' %}" type="video/webm">
+                                    <!--<source src="uploads/" type="video/mp4">-->
+                                </video>
+                            </div>
+                            <div class="flex row wrap views info">
+                                <span class="video main teal tag">#the ring</span>
+                                <div class="vertical line"></div>
+                                <span class="video views tag">
+                                    121,3k
+                                </span>
+                                <img class="views icon" src="{% static 'img/icons/eye_icon.svg' %}" alt="eye">
+                            </div>
+                        </div>
+                        <div class="flex column wrap info side">
+                            <div class="flex column video info">
+                                <h3>One ring to rule them all. One ring to find them. One Ring to bring them all and in the darkness bind them!</h3>
+                                <p>By <span class="username">Jan</span></p>
+                            </div>
+                            <div class="flex row wrap video vote">
+                                <input type="radio" name="vote4" id="voteS4" value="Smart">
+                                <label for="voteS4">Smart</label>
+                                <input type="radio" name="vote4" id="voteD4" value="Dull">
+                                <label for="voteD4">Dull</label>
+                            </div>
+                            <div class="flex column video comments">
+                                <a href="{% url 'video_id' %}#comments">Read comments</a>
+                            </div>
+                            <div class="flex row wrap social media">
+                                <input type="button" value="Facebook">
+                                <input type="button" value="Twitter">
+                                <input type="button" value="Reddit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+{% endblock %}
