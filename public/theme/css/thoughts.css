@@ -78,16 +78,20 @@ footer {
 /* +++++++++++++++++++++++ */
 /* +++++ MOBILE SIZE +++++ */
 /* ##### SEARCH BAR ##### */
-
-.search.bar {
+.search.form {
     margin: 10px 0px 10px auto;
-    width: 45%;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 30%;
+}
+.search.bar {
+    margin-top: 10px;
+    width: auto;
     font: "Lucida Console", Monaco, monospace;
     font-size: 1em;
     padding-left: 4px;
     padding-right: 4px;
     border-radius: 5px 5px 5px 5px;
-    position: relative;
 }
 .search.bar:active, .search.bar:hover {
     border-color: hsla(270, 50%, 40%, 0.85);
@@ -636,9 +640,12 @@ footer .site.footer .copyright {
     }
     
     /* ##### SEARCH BAR ##### */
+    .search.form {
+        width: 60%;
+    }
     .search.bar {
         margin-left: auto;
-        width: 60%;
+        width: 90%;
         background-image: url(../img/icons/search_icon.svg);
         background-position: right;
         background-size: 30px;
@@ -769,8 +776,11 @@ footer .site.footer .copyright {
     }
     
     /* ##### SEARCH BAR ##### */
-    .search.bar {
+    .search.form {
         width: 70%;
+    }
+    .search.bar {
+        width: 100%;
     }
     
     /* ##### BANNER ##### */
